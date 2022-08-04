@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("../src/images/airsoft-military-game-2021-08-26-18-36-56-utc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 50px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.box {
+  display: flex;
+  background-color: #383838;
+  border: 1px solid black;
+  opacity: 0.6;
+  height: 40rem;
+  width: 80rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* start of media  */
+@media (max-width: 768px) { 
+  body {
+
+    background-image: url("../src/images/airsoft-military-game-2021-08-26-18-36-56-utc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  
+  }
+  
+  .box {
+    display: flex;
+    background-color: #383838;
+    border: 1px solid black;
+    opacity: 0.6;
+    height: 30rem;
+    width: 40rem;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  
+  }
+  
+  .box {
+    display: flex;
+    background-color: #383838;
+    border: 1px solid black;
+    opacity: 0.6;
+    height: 30rem;
+    width: 18rem;
   }
 }
