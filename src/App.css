@@ -1,76 +1,102 @@
-body {
-  background-image: url("../src/images/airsoft-military-game-2021-08-26-18-36-56-utc.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-position: center; */
-  
-  
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&display=swap');
+
+/* text overlay for main header image */
+.breakfast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bangers';
+
+}
+.cafe-name {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Black Ops One';
 }
 
-.home-container {
+/* main header image */
+.main-img {
+  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-
+  overflow: hidden;
+  
+}
+.main-img img {
+  flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
-.box {
+.divider {
+  background-color: #384646;
+  height: 50px;
+}
+
+.mission {
+  height: 50rem;
+  width: 40rem;
+}
+.mission-box {
   display: flex;
-  background-color: #383838;
-  border: 1px solid black;
-  opacity: 0.6;
-  height: 40rem;
-  width: 80rem;
+  float:right;
+  background-color: black;
+  height: 50rem;
+  width: 79rem;
+  margin-right: 1px;
+}
+.OurMission {
+  font-family: 'Black Ops One';
+}
+
+.food{
+  /* display: flex; */
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  /* position: relative; */
+  width: 15rem;
+  height: 10rem;
+  margin: 10px;
+  /* margin-left: -600px; */
+  
 }
 
 
-/* start of media  */
-@media (max-width: 768px) { 
-  body {
-
-    background-image: url("../src/images/airsoft-military-game-2021-08-26-18-36-56-utc.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-
-  }
-
-  .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  
-  }
-  
-  .box {
-    display: flex;
-    background-color: #383838;
-    border: 1px solid black;
-    opacity: 0.6;
-    height: 30rem;
-    width: 40rem;
-  }
-
+/* start of media */
+/*Small smartphones [325px -> 425px]*/
+@media only screen and (max-width: 425px){
+  /* main header image */
+.main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.main-img img {
+  flex-shrink: 0;
+    width: 100%;
+    height: 100%;
 }
 
-@media (max-width: 320px) {
-  .home-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  
-  }
-  
-  .box {
-    display: flex;
-    background-color: #383838;
-    border: 1px solid black;
-    opacity: 0.6;
-    height: 30rem;
-    width: 18rem;
-  }
+/* header text */
+.cafe-name {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+  line-height: 0.5em; /* a */
+  max-height: 0.5em; 
+  transform: translate(-30%, -30%);
+  font-family: 'Black Ops One';
+}
 }

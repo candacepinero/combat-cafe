@@ -10,7 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 export default function Nav() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{background: "#383838"}}>
+      <AppBar position="static" sx={{background: "#384646"}}>
         <Toolbar>
           <IconButton
             size="large"
@@ -21,9 +21,7 @@ export default function Nav() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Combat Cafe
-          </Typography>
+         <img height={55} src='https://i.imgur.com/tj9vo2G.jpg' />
           
         </Toolbar>
       </AppBar>
