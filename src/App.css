@@ -3,100 +3,396 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&display=swap');
 
-/* text overlay for main header image */
+/* ==================================== main header image section ======================================= */
 .breakfast {
   position: absolute;
-  top: 50%;
+  top: 4%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Bangers';
-
+  color: white;
+  font-size: 3rem;
 }
+
 .cafe-name {
   position: absolute;
-  top: 43%;
+  top: 30%;
   left: 50%;
+  font-size: 8rem;
   transform: translate(-50%, -50%);
+  color: white;
   font-family: 'Black Ops One';
 }
 
-/* main header image */
+
 .main-img {
   /* border: 2px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  
+
 }
 .main-img img {
   flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .divider {
-  background-color: #384646;
-  height: 50px;
+  background-color: rgb(36, 35, 35);
+  height: 70px;
 }
 
-.mission {
-  height: 50rem;
-  width: 40rem;
-}
-.mission-box {
+/* ==============================================mission section ===============================================*/
+.mission-container {
+  position: relative;
   display: flex;
-  float:right;
-  background-color: black;
-  height: 50rem;
-  width: 79rem;
-  margin-right: 1px;
+  flex-wrap: wrap;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* position: absolute!important; */
+  top: 0;
+  z-index: 0;
+  /* border: 2px solid rgb(240, 9, 47); */
 }
+
+.mission-div {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  margin-left: auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  /* border: 2px solid greenyellow; */
+}
+
+.mission-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  float: right;
+  vertical-align: middle;
+  border: 0;
+}
+
+.ourmission-container {
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute;
+  /* border: 2px solid blue; */
+}
+
+.ourmission-div {
+  /* border: 2px solid orange; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 41%;
+}
+
+
 .OurMission {
+  color: #70bb05;
+  font-size: 5em;
   font-family: 'Black Ops One';
 }
 
-.food{
-  /* display: flex; */
-  /* flex-direction: row;
-  flex-wrap: wrap; */
-  /* position: relative; */
-  width: 15rem;
-  height: 10rem;
+/* .text {
+  height: 50px;
+  border: 2px solid red;
+
+}
+
+.info {
+  border: 2px solid purple;
+  height: 50px;
+}
+
+.info-link {
+  border: 2px solid purple;
+  height: 50px;
+} */
+
+
+/* ==============================================shop section===================================================*/
+.shop-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* position: absolute!important; */
+  top: 0;
+  z-index: 0;
+  /* border: 2px solid rgb(240, 9, 47); */
+  background-color: rgb(36, 35, 35);
+}
+
+.shop-div {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  margin-right: auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  /* border: 2px solid greenyellow; */
+
+}
+
+.shop-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* float: right; */
+  vertical-align: middle;
+  border: 0;
+}
+
+.text-container {
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute;
+  /* border: 2px solid blue; */
+}
+
+.text-div {
+  /* border: 2px solid orange; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  left:58%;
+  position: absolute;
+  height: 100%;
+  width: 41%;
+}
+
+.shop {
+  font-family: 'Black Ops One';
+  color: #70bb05;
+  font-size:  5em;
+}
+/* =================================== start of menu ============================================ */
+.food {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 20rem;
+  height: 15rem;
   margin: 10px;
   /* margin-left: -600px; */
-  
+
 }
 
 
 /* start of media */
 /*Small smartphones [325px -> 425px]*/
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 325px) {
   /* main header image */
-.main-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.main-img img {
-  flex-shrink: 0;
+  @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&display=swap');
+
+  .main-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .main-img img {
+    flex-shrink: 0;
     width: 100%;
     height: 100%;
+  }
+
+  /* header text */
+  .cafe-name {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    font-size: 4vh;
+    transform: translate(-30%, -30%);
+    font-family: 'Black Ops One';
+    color: white;
+  }
+
+  .breakfast {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 2vh;
+    font-size: 3vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Bangers';
+    color: white;
+  }
+
+  /* start of mission section  */
+  .mission {
+    height: 10rem;
+    width: 11rem;
+
+
+  }
+
+  .OurMission {
+    font-family: 'Black Ops One';
+    float: right;
+    width: 9rem;
+    color: black;
+    font-size: 2vh;
+  }
+
+  .shop-img {
+    height: 10rem;
+    width: 15rem;
+    left: 5px;
+    margin-top: -4px;
+
+    border: 1px solid darkolivegreen;
+  }
+
+  .shop {
+    display: flex;
+    float: left;
+    font-family: 'Black Ops One';
+    width: 8rem;
+    color: white;
+    font-size: 2vh;
+  }
+
+  .shop-box {
+    background-color: black;
+    height: 10rem;
+    margin-top: -4px;
+    float: left;
+  }
+
+  .divider {
+    background-color: black;
+    height: 50px;
+  }
+
+  .food {
+    /* display: flex; */
+    /* flex-direction: row;
+  flex-wrap: wrap; */
+    /* position: relative; */
+    width: 5rem;
+    height: 5rem;
+    margin: 10px;
+    /* margin-left: -600px; */
+
+  }
 }
 
-/* header text */
-.cafe-name {
-  position: absolute;
-  top: 10%;
-  left: 30%;
-  /* overflow: hidden; */
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  display: block;
-  line-height: 0.5em; /* a */
-  max-height: 0.5em; 
-  transform: translate(-30%, -30%);
-  font-family: 'Black Ops One';
-}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&display=swap');
+
+  .main-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .main-img img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* header text */
+  .cafe-name {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 4vh;
+    transform: translate(-30%, -30%);
+    font-family: 'Black Ops One';
+    color: white;
+  }
+
+  .breakfast {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-size: 2vh;
+    font-size: 3vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Bangers';
+    color: white;
+  }
+
+  /* start of mission section  */
+  .mission {
+    height: 11rem;
+    width: 13rem;
+
+
+  }
+
+  .OurMission {
+    font-family: 'Black Ops One';
+    float: right;
+    width: 9rem;
+    color: black;
+    font-size: 2vh;
+  }
+
+  .shop-img {
+    height: 11rem;
+    width: 13rem;
+    left: 5px;
+    margin-top: -4px;
+
+    border: 1px solid darkolivegreen;
+  }
+
+  .shop {
+    display: flex;
+    float: left;
+    font-family: 'Black Ops One';
+    width: 8rem;
+    color: white;
+    font-size: 2vh;
+  }
+
+  .shop-box {
+    background-color: black;
+    height: 11rem;
+    width: 10rem;
+    margin-top: -4px;
+    float: left;
+  }
+
+  .divider {
+    background-color: black;
+    height: 50px;
+  }
+
+  .food {
+    /* display: flex; */
+    /* flex-direction: row;
+  flex-wrap: wrap; */
+    /* position: relative; */
+    width: 7rem;
+    height: 7rem;
+    margin: 10px;
+    /* margin-left: -600px; */
+
+  }
 }
