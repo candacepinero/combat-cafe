@@ -9,6 +9,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Nav from "../src/Components/Nav"
 import About from "./pages/About"
+import Footer from './Components/Footer';
 
 
 
@@ -16,12 +17,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <Nav/>
- 
   <Routes>
     <Route exact path="/" element={<App/>}/>
     <Route exact path="/about" element={<About/>}/>
 
   </Routes>
+  <Footer/>
 
 </BrowserRouter>
 );

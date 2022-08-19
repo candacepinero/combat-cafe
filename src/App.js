@@ -1,5 +1,5 @@
 import './App.css';
-import Grid from '@mui/material/Grid'
+
 
 
 
@@ -8,11 +8,17 @@ function App() {
   return (
     <div>
       {/* ================================ start of video header ====================================== */}
-      <Grid className='main-img'>
+      <div className='container'>
         <img height={1000} width={1600} src='https://i.imgur.com/pEXyNEx.jpg' />
-        <h1 className='cafe-name'>Combat Cafe</h1>
-        <h4 className='breakfast'>Every Revolution Begins With Breakfast</h4>
-      </Grid>
+        <div className='header-div'>
+        <div className='combat-cafe'>
+          <h1 className='cafe-name'>Combat Cafe</h1>
+        </div>
+        <div className='slogan'>
+          <h4 className='breakfast'>Every Revolution Begins With Breakfast</h4>
+        </div>
+        </div>
+      </div>
       <div className='divider'></div>
       {/* ======================== about section =============================================== */}
       {/* start of main container and image */}
@@ -27,10 +33,12 @@ function App() {
               <h2 className='OurMission' >Our Mission</h2>
             </div>
             <div className='info'>
-              <p>Military-themed Breakfast and Lunch Restaurant for both veterans and non-veterans to enjoy</p>
+              <p>Combat Cafe in Umatilla is a home away from home for many local veterans and families.
+                Beth and Bruce opened Combat Cafe to be much more than a breakfast and lunch establishment. The café has become a place of solidarity for veterans and civilians alike.
+              </p>
             </div>
             <div className='info-link'>
-              <a href='/about'>Learn more</a>
+              <a href='/about'><button className='mission-button'>Learn more</button></a>
             </div>
           </div>
         </div>
@@ -43,22 +51,22 @@ function App() {
         <div className='text-container'>
           <div className='text-div'>
             <h2 className='shop'>Shop</h2>
-              <a href='#'>Take a look</a>
+            <a href='#'><button className='shop-btn'>Take a look</button></a>
             <div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
 
-
-      <Grid className='food-img'>
-
-        <img className='food' src="https://i.imgur.com/pEXyNEx.jpg" />
-
-      </Grid>
-      <img className='food' src="https://i.imgur.com/FriG9K5.jpg" />
-      <img className='food' src="https://i.imgur.com/qrKlELD.jpg" />
-      <img className='food' src="https://i.imgur.com/WUZDxpb.jpg" />
+      {/* ================================ menu section ==================================== */}
+      <div className='food-container'>
+        <div className='food-div'>
+          <img className='food' src="https://i.imgur.com/pEXyNEx.jpg" />
+          <img className='food' src="https://i.imgur.com/FriG9K5.jpg" />
+          <img className='food' src="https://i.imgur.com/qrKlELD.jpg" />
+          <img className='food' src="https://i.imgur.com/WUZDxpb.jpg" />
+        </div>
+      </div>
 
 
 

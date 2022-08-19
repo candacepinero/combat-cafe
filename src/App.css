@@ -1,43 +1,49 @@
 /* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Rubik+Dirt&display=swap');
 
 /* ==================================== main header image section ======================================= */
-.breakfast {
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Bangers';
-  color: white;
-  font-size: 3rem;
-}
-
-.cafe-name {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  font-size: 8rem;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Black Ops One';
-}
-
-
-.main-img {
-  /* border: 2px solid black; */
+.container {
+  /* border: 2px solid rgb(19, 166, 229); */
   display: flex;
   justify-content: center;
-  align-items: center;
   overflow: hidden;
-
 }
-.main-img img {
+.container img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
 }
+
+.header-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  /* border: 2px solid greenyellow; */
+  width: 100%;
+  height: 100%;
+}
+.breakfast {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: 'Bangers';
+  color: white;
+  font-size: 3rem;
+  
+}
+
+.cafe-name {
+  position: absolute;
+  width: 100%;
+  font-size: 8rem;
+  transform: translate(-23%, -120%) !important;
+  color: white;
+  font-family: 'Black Ops One';
+  flex-wrap: wrap;
+}
+
+
 
 .divider {
   background-color: rgb(36, 35, 35);
@@ -102,21 +108,33 @@
   font-family: 'Black Ops One';
 }
 
+.info {
+  /* border: 2px solid purple; */
+  position: relative;
+  bottom: 80px;
+  width: 60%;
+  font-family: 'Rubik Dirt', cursive;
+}
+.mission-button {
+  width: 9em;
+  height: 3em;
+  background-color: #232323;
+  color: #70bb05;
+  font-family: 'Rubik Dirt', cursive;
+}
+.info-link {
+  /* border: 2px solid purple; */
+  position: relative;
+  bottom: 70px;
+} 
+
 /* .text {
   height: 50px;
   border: 2px solid red;
 
 }
 
-.info {
-  border: 2px solid purple;
-  height: 50px;
-}
 
-.info-link {
-  border: 2px solid purple;
-  height: 50px;
-} */
 
 
 /* ==============================================shop section===================================================*/
@@ -173,34 +191,70 @@
   height: 100%;
   width: 41%;
 }
-
 .shop {
   font-family: 'Black Ops One';
   color: #70bb05;
   font-size:  5em;
 }
+.shop-btn {
+  width: 9em;
+  height: 3em;
+  background-color: #619319;
+  color: black;
+  font-family: 'Rubik Dirt', cursive;
+}
 /* =================================== start of menu ============================================ */
-.food {
+.food-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  position: relative;
-  width: 20rem;
-  height: 15rem;
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
   margin: 10px;
-  /* margin-left: -600px; */
+  /* border: 2px solid blue; */
 
 }
 
+.food {
+  width: 20rem;
+  height: 15rem;
+  margin: 10px;
+}
 
-/* start of media */
+/* ================================== Footer =================================================== */
+.footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #232323;
+}
+.footer-logo {
+  display: flex;
+  top: 40px;
+  left: 200px;
+  position: relative;
+  border-radius: 20px 20px; 
+}
+.line {
+  height: 1px;
+  width: 80%;
+  position: relative;
+  left: 15rem;
+  top: 60px;
+  background-color: #70bb05;
+}
+.footer-rights {
+  color: white;
+  top: 55px;
+  left: 240px;
+  position: relative;
+}
+
+
+/* ======================================= media =============================================== */
+
 /*Small smartphones [325px -> 425px]*/
 @media only screen and (max-width: 325px) {
-  /* main header image */
-  @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&display=swap');
-
   .main-img {
     display: flex;
     justify-content: center;
@@ -214,74 +268,86 @@
     height: 100%;
   }
 
-  /* header text */
-  .cafe-name {
-    position: absolute;
-    top: 15%;
-    left: 35%;
-    font-size: 4vh;
-    transform: translate(-30%, -30%);
-    font-family: 'Black Ops One';
-    color: white;
-  }
-
-  .breakfast {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    font-size: 2vh;
-    font-size: 3vw;
-    transform: translate(-50%, -50%);
-    font-family: 'Bangers';
-    color: white;
-  }
-
-  /* start of mission section  */
-  .mission {
-    height: 10rem;
-    width: 11rem;
-
-
-  }
-
-  .OurMission {
-    font-family: 'Black Ops One';
-    float: right;
-    width: 9rem;
-    color: black;
-    font-size: 2vh;
-  }
-
-  .shop-img {
-    height: 10rem;
-    width: 15rem;
-    left: 5px;
-    margin-top: -4px;
-
-    border: 1px solid darkolivegreen;
-  }
-
-  .shop {
+  .mission-container {
+    position: relative;
     display: flex;
-    float: left;
+    flex-wrap: wrap;
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* position: absolute!important; */
+    top: 0;
+    z-index: 0;
+    /* border: 2px solid rgb(240, 9, 47); */
+  }
+  
+  .mission-div {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    margin-left: auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    /* border: 2px solid greenyellow; */
+  }
+  
+  .mission-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    float: right;
+    vertical-align: middle;
+    border: 0;
+  }
+  
+  .ourmission-container {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute;
+    /* border: 2px solid blue; */
+  }
+  
+  .ourmission-div {
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 41%;
+  }
+  
+  
+  .OurMission {
+    color: #70bb05;
+    font-size: 5em;
     font-family: 'Black Ops One';
-    width: 8rem;
-    color: white;
-    font-size: 2vh;
   }
-
-  .shop-box {
-    background-color: black;
-    height: 10rem;
-    margin-top: -4px;
-    float: left;
+  
+  .info {
+    /* border: 2px solid purple; */
+    position: relative;
+    bottom: 80px;
+    width: 60%;
+    font-family: 'Rubik Dirt', cursive;
   }
-
-  .divider {
-    background-color: black;
-    height: 50px;
+  .mission-button {
+    width: 9em;
+    height: 3em;
+    background-color: #232323;
+    color: #70bb05;
+    font-family: 'Rubik Dirt', cursive;
   }
-
+  .info-link {
+    /* border: 2px solid purple; */
+    position: relative;
+    bottom: 70px;
+  } 
+  
+ 
+  
+  
   .food {
     /* display: flex; */
     /* flex-direction: row;
@@ -298,9 +364,6 @@
 
 @media only screen and (max-width: 600px) {
   /*Big smartphones [426px -> 600px]*/
-  @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&display=swap');
 
   .main-img {
     display: flex;
@@ -320,7 +383,7 @@
     position: absolute;
     top: 15%;
     left: 40%;
-    font-size: 4vh;
+    font-size: 1rem;
     transform: translate(-30%, -30%);
     font-family: 'Black Ops One';
     color: white;
@@ -396,3 +459,160 @@
 
   }
 }
+
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+   /* ==================================== main header image section ======================================= */
+   .main-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .main-img img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+   .breakfast {
+  position: absolute;
+  top: 52%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bangers';
+  color: white;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.cafe-name {
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  width: 100%;
+  font-size: 6rem;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Black Ops One';
+}
+
+
+.main-img {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+.main-img img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.divider {
+  background-color: rgb(36, 35, 35);
+  height: 70px;
+}
+
+
+/* ================================== Footer =================================================== */
+.footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #232323;
+}
+.footer-logo {
+  display: flex;
+  top: 40px;
+  left: 50px;
+  position: relative;
+  border-radius: 20px 20px; 
+}
+.line {
+  height: 1px;
+  width: 80%;
+  position: relative;
+  left: 5rem;
+  top: 60px;
+  background-color: #70bb05;
+}
+.footer-rights {
+  color: white;
+  top: 55px;
+  left: 90px;
+  position: relative;
+}
+
+/* ===========================================Mission section ================================ */
+.mission-div {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+  margin-left: auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  /* border: 2px solid greenyellow; */
+}
+
+.mission-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  float: right;
+  vertical-align: middle;
+  border: 0;
+}
+
+.ourmission-container {
+  height: 100% !important;
+  width: 100% !important;
+  position: absolute;
+  /* border: 2px solid blue; */
+}
+
+.ourmission-div {
+  /* border: 2px solid orange; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 41%;
+}
+
+
+.OurMission {
+  color: #70bb05;
+  font-size: 2em;
+  font-family: 'Black Ops One';
+}
+
+.info {
+  /* border: 2px solid purple; */
+  position: relative;
+  bottom: 40px;
+  width: 90%;
+  font-family: 'Rubik Dirt', cursive;
+}
+.mission-button {
+  width: 9em;
+  height: 3em;
+  position: relative;
+  top: 30px;
+  background-color: #232323;
+  color: #70bb05;
+  font-family: 'Rubik Dirt', cursive;
+}
+.info-link {
+  /* border: 2px solid purple; */
+  position: relative;
+  bottom: 70px;
+} 
+}
+
