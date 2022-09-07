@@ -6,38 +6,39 @@
   /* border: 2px solid rgb(19, 166, 229); */
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 .container img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
+  
 }
 
 .header-div {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   position: absolute;
   /* border: 2px solid greenyellow; */
   width: 100%;
   height: 100%;
 }
-.breakfast {
+.slogan {
   position: absolute;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   font-family: 'Bangers';
   color: white;
   font-size: 3rem;
   
 }
-
-.cafe-name {
+.combat-cafe {
   position: absolute;
-  width: 100%;
-  font-size: 8rem;
-  transform: translate(-23%, -120%) !important;
+  top: 100px;
+  font-size: 4rem;
+  /* transform: translate(-23%, -120%) !important; */
   color: white;
   font-family: 'Black Ops One';
   flex-wrap: wrap;
@@ -222,6 +223,57 @@
   margin: 10px;
 }
 
+
+/* ===================================about slide show ========================================== */
+/* * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;} */
+
+/* Slideshow container */
+/* .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+} */
+
+/* Caption text */
+/* .slideshow-text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* The dots/bullets/indicators */
+/* .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+/* .active {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+/* .fade {
+  animation-name: fade;
+  animation-duration: 5s;
+} */
+
+/* @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} */
 /* ================================== Footer =================================================== */
 .footer {
   width: 100%;
