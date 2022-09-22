@@ -9,11 +9,12 @@
   align-items: center;
   overflow: hidden;
 }
+
 .container img {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
-  
+
 }
 
 .header-div {
@@ -26,14 +27,16 @@
   width: 100%;
   height: 100%;
 }
+
 .slogan {
   position: absolute;
   /* transform: translate(-50%, -50%); */
   font-family: 'Bangers';
   color: white;
   font-size: 3rem;
-  
+
 }
+
 .combat-cafe {
   position: absolute;
   top: 100px;
@@ -116,6 +119,7 @@
   width: 60%;
   font-family: 'Rubik Dirt', cursive;
 }
+
 .mission-button {
   width: 9em;
   height: 3em;
@@ -123,11 +127,12 @@
   color: #70bb05;
   font-family: 'Rubik Dirt', cursive;
 }
+
 .info-link {
   /* border: 2px solid purple; */
   position: relative;
   bottom: 70px;
-} 
+}
 
 /* .text {
   height: 50px;
@@ -187,16 +192,18 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  left:58%;
+  left: 58%;
   position: absolute;
   height: 100%;
   width: 41%;
 }
+
 .shop {
   font-family: 'Black Ops One';
   color: #70bb05;
-  font-size:  5em;
+  font-size: 5em;
 }
+
 .shop-btn {
   width: 9em;
   height: 3em;
@@ -204,6 +211,7 @@
   color: black;
   font-family: 'Rubik Dirt', cursive;
 }
+
 /* =================================== start of menu ============================================ */
 .food-container {
   display: flex;
@@ -225,68 +233,39 @@
 
 
 /* ===================================about slide show ========================================== */
-/* * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;} */
+.slide-container>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
 
-/* Slideshow container */
-/* .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-
-} */
-
-/* Caption text */
-/* .slideshow-text {
-  color: black;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
   text-align: center;
-} */
+}
 
-/* The dots/bullets/indicators */
-/* .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-} */
 
-/* .active {
-  background-color: #717171;
-} */
 
-/* Fading animation */
-/* .fade {
-  animation-name: fade;
-  animation-duration: 5s;
-} */
 
-/* @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-} */
 /* ================================== Footer =================================================== */
 .footer {
   width: 100%;
   height: 30vh;
   background-color: #232323;
 }
+
 .footer-logo {
   display: flex;
   top: 40px;
   left: 200px;
   position: relative;
-  border-radius: 20px 20px; 
+  border-radius: 20px 20px;
 }
+
 .line {
   height: 1px;
   width: 80%;
@@ -295,6 +274,7 @@ img {vertical-align: middle;} */
   top: 60px;
   background-color: #70bb05;
 }
+
 .footer-rights {
   color: white;
   top: 55px;
@@ -333,7 +313,7 @@ img {vertical-align: middle;} */
     z-index: 0;
     /* border: 2px solid rgb(240, 9, 47); */
   }
-  
+
   .mission-div {
     flex: 0 0 58.333333%;
     max-width: 58.333333%;
@@ -343,7 +323,7 @@ img {vertical-align: middle;} */
     height: 100% !important;
     /* border: 2px solid greenyellow; */
   }
-  
+
   .mission-img {
     object-fit: cover;
     width: 100%;
@@ -352,14 +332,14 @@ img {vertical-align: middle;} */
     vertical-align: middle;
     border: 0;
   }
-  
+
   .ourmission-container {
     height: 100% !important;
     width: 100% !important;
     position: absolute;
     /* border: 2px solid blue; */
   }
-  
+
   .ourmission-div {
     /* border: 2px solid orange; */
     display: flex;
@@ -369,14 +349,14 @@ img {vertical-align: middle;} */
     height: 100%;
     width: 41%;
   }
-  
-  
+
+
   .OurMission {
     color: #70bb05;
     font-size: 5em;
     font-family: 'Black Ops One';
   }
-  
+
   .info {
     /* border: 2px solid purple; */
     position: relative;
@@ -384,6 +364,7 @@ img {vertical-align: middle;} */
     width: 60%;
     font-family: 'Rubik Dirt', cursive;
   }
+
   .mission-button {
     width: 9em;
     height: 3em;
@@ -391,15 +372,16 @@ img {vertical-align: middle;} */
     color: #70bb05;
     font-family: 'Rubik Dirt', cursive;
   }
+
   .info-link {
     /* border: 2px solid purple; */
     position: relative;
     bottom: 70px;
-  } 
-  
- 
-  
-  
+  }
+
+
+
+
   .food {
     /* display: flex; */
     /* flex-direction: row;
@@ -513,10 +495,11 @@ img {vertical-align: middle;} */
 }
 
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
+
   /*Tablets [601px -> 1200px]*/
-   /* ==================================== main header image section ======================================= */
-   .main-img {
+  /* ==================================== main header image section ======================================= */
+  .main-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -530,141 +513,146 @@ img {vertical-align: middle;} */
   }
 
 
-   .breakfast {
-  position: absolute;
-  top: 52%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  font-family: 'Bangers';
-  color: white;
-  width: 100%;
-  font-size: 2rem;
-}
+  .breakfast {
+    position: absolute;
+    top: 52%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: 'Bangers';
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+  }
 
-.cafe-name {
-  position: absolute;
-  top: 40%;
-  left: 55%;
-  width: 100%;
-  font-size: 6rem;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Black Ops One';
-}
-
-
-.main-img {
-  /* border: 2px solid black; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-
-}
-.main-img img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.divider {
-  background-color: rgb(36, 35, 35);
-  height: 70px;
-}
+  .cafe-name {
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    width: 100%;
+    font-size: 6rem;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Black Ops One';
+  }
 
 
-/* ================================== Footer =================================================== */
-.footer {
-  width: 100%;
-  height: 30vh;
-  background-color: #232323;
-}
-.footer-logo {
-  display: flex;
-  top: 40px;
-  left: 50px;
-  position: relative;
-  border-radius: 20px 20px; 
-}
-.line {
-  height: 1px;
-  width: 80%;
-  position: relative;
-  left: 5rem;
-  top: 60px;
-  background-color: #70bb05;
-}
-.footer-rights {
-  color: white;
-  top: 55px;
-  left: 90px;
-  position: relative;
-}
+  .main-img {
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
-/* ===========================================Mission section ================================ */
-.mission-div {
-  flex: 0 0 58.333333%;
-  max-width: 58.333333%;
-  margin-left: auto !important;
-  padding: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  /* border: 2px solid greenyellow; */
-}
+  }
 
-.mission-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  float: right;
-  vertical-align: middle;
-  border: 0;
-}
+  .main-img img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 
-.ourmission-container {
-  height: 100% !important;
-  width: 100% !important;
-  position: absolute;
-  /* border: 2px solid blue; */
-}
-
-.ourmission-div {
-  /* border: 2px solid orange; */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 41%;
-}
+  .divider {
+    background-color: rgb(36, 35, 35);
+    height: 70px;
+  }
 
 
-.OurMission {
-  color: #70bb05;
-  font-size: 2em;
-  font-family: 'Black Ops One';
-}
+  /* ================================== Footer =================================================== */
+  .footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #232323;
+  }
 
-.info {
-  /* border: 2px solid purple; */
-  position: relative;
-  bottom: 40px;
-  width: 90%;
-  font-family: 'Rubik Dirt', cursive;
-}
-.mission-button {
-  width: 9em;
-  height: 3em;
-  position: relative;
-  top: 30px;
-  background-color: #232323;
-  color: #70bb05;
-  font-family: 'Rubik Dirt', cursive;
-}
-.info-link {
-  /* border: 2px solid purple; */
-  position: relative;
-  bottom: 70px;
-} 
-}
+  .footer-logo {
+    display: flex;
+    top: 40px;
+    left: 50px;
+    position: relative;
+    border-radius: 20px 20px;
+  }
 
+  .line {
+    height: 1px;
+    width: 80%;
+    position: relative;
+    left: 5rem;
+    top: 60px;
+    background-color: #70bb05;
+  }
+
+  .footer-rights {
+    color: white;
+    top: 55px;
+    left: 90px;
+    position: relative;
+  }
+
+  /* ===========================================Mission section ================================ */
+  .mission-div {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    margin-left: auto !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    /* border: 2px solid greenyellow; */
+  }
+
+  .mission-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    float: right;
+    vertical-align: middle;
+    border: 0;
+  }
+
+  .ourmission-container {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute;
+    /* border: 2px solid blue; */
+  }
+
+  .ourmission-div {
+    /* border: 2px solid orange; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 41%;
+  }
+
+
+  .OurMission {
+    color: #70bb05;
+    font-size: 2em;
+    font-family: 'Black Ops One';
+  }
+
+  .info {
+    /* border: 2px solid purple; */
+    position: relative;
+    bottom: 40px;
+    width: 90%;
+    font-family: 'Rubik Dirt', cursive;
+  }
+
+  .mission-button {
+    width: 9em;
+    height: 3em;
+    position: relative;
+    top: 30px;
+    background-color: #232323;
+    color: #70bb05;
+    font-family: 'Rubik Dirt', cursive;
+  }
+
+  .info-link {
+    /* border: 2px solid purple; */
+    position: relative;
+    bottom: 70px;
+  }
+}
