@@ -1,4 +1,5 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
               </p>
             </div>
             <div className='info-link'>
-              <a href='/about'><button className='mission-button'>Learn more</button></a>
+              <Link to='about'><button className='mission-button'>Learn more</button></Link>
             </div>
           </div>
         </div>
