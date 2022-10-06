@@ -39,8 +39,8 @@ root.render(
     <BrowserRouter>
       <Nav />
       <Routes>
-        <Route exact path="/" element={<App />} />
-        <Route exact path="/about" element={<About />} />
+        <Route path="/" element={<App />} />
+        <Route path="/about" element={<About />} />
 
       </Routes>
       <Footer />
