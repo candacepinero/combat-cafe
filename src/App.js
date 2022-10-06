@@ -1,9 +1,5 @@
 import './App.css';
 
-
-
-
-
 function App() {
   return (
     <div>
@@ -11,12 +7,12 @@ function App() {
       <div className='container'>
         <img height={1000} width={1600} src='https://i.imgur.com/pEXyNEx.jpg' />
         <div className='header-div'>
-        <div className='combat-cafe'>
-          <h1 className='cafe-name'>Combat Cafe</h1>
-        </div>
-        <div className='slogan'>
-          <h4 className='breakfast'>Every Revolution Begins With Breakfast</h4>
-        </div>
+          <div className='combat-cafe'>
+            <h1 className='cafe-name'>Combat Cafe</h1>
+          </div>
+          <div className='slogan'>
+            <h4 className='breakfast'>Every Revolution Begins With Breakfast</h4>
+          </div>
         </div>
       </div>
       <div className='divider'></div>
@@ -67,12 +63,7 @@ function App() {
           <img className='food' src="https://i.imgur.com/WUZDxpb.jpg" />
         </div>
       </div>
-
-
-
     </div>
-
-
   )
 }
 

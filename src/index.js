@@ -10,21 +10,42 @@ import reportWebVitals from './reportWebVitals';
 import Nav from "../src/Components/Nav"
 import About from "./pages/About"
 import Footer from './Components/Footer';
+import { ThemeProvider, createTheme } from '@mui/material';
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#5f7f01",
+    }
+  },
+  components: {
+    MuiButton: {
+      defaultProps: {
+        variant: 'contained',
+      },
+      styleOverrides: {
+        contained: {
+          padding: "16px",
+        }
+      }
+    }
+  }
+})
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-  <Nav/>
-  <Routes>
-    <Route exact path="/" element={<App/>}/>
-    <Route exact path="/about" element={<About/>}/>
+  <ThemeProvider theme={theme}>
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<App />} />
+        <Route exact path="/about" element={<About />} />
 
-  </Routes>
-  <Footer/>
-
-</BrowserRouter>
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
