@@ -48,7 +48,7 @@ function App() {
         <div className='text-container'>
           <div className='text-div'>
             <h2 className='shop'>Shop</h2>
-            <a href='#'><button className='shop-btn'>Take a look</button></a>
+            <Link to='shop'><button className='shop-btn'>Take a look</button></Link>
             <div>
             </div>
           </div>

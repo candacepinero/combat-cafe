@@ -9,6 +9,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Nav from "../src/Components/Nav"
 import About from "./pages/About"
+import Shop from "./pages/Shop"
 import Footer from './Components/Footer';
 import { ThemeProvider, createTheme } from '@mui/material';
 
@@ -41,6 +42,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />
+        <Route path="/shop" element={<Shop />} />
 
       </Routes>
       <Footer />
