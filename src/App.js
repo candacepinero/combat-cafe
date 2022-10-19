@@ -6,7 +6,7 @@ function App() {
     <div>
       {/* ================================ start of video header ====================================== */}
       <div className='container'>
-        <img height={1000} width={1600} src='https://i.imgur.com/pEXyNEx.jpg' />
+        <img height="100%" width="100%" src='https://i.imgur.com/pEXyNEx.jpg' />
         <div className='header-div'>
           <div className='combat-cafe'>
             <h1 className='cafe-name'>Combat Cafe</h1>
